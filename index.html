@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Scheduler</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+<body>
+
+	<div class = "wrapper">
+
+		
+		<div class = "container">
+			<div class = "jumbotron">
+				<h1>Train to the Future</h1>
+			</div>
+		</div>
+		<div class = "container-fluid">
+			<div class = "panel panel-primary">
+				<div class = "panel-heading">Current Train Schedule</div>
+				<div class = "panel-body">
+					<table class = "table">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Destination</th>
+								<th>Frequency (min)</th>
+								<th>Next Arrival</th>
+								<th>Minutes Away</th>						
+							</tr>
+						</thead>
+						<tbody class = "tablebody">
+						</tbody>					
+					</table>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class = "container-fluid">
+			<div class = "panel panel-primary">
+				<div class = "panel-heading">Add Train</div>
+				<div class = "panel-body">
+					<form class="form-inline" action="/action_page.php">
+					<form class = "form-group">
+						<label for = "trainname">Train Name</label>
+						<input type="text" id = "trainname" class = "form-control" placeholder="">
+
+						<label for = "destination">Destination</label>
+						<input type="text" id = "destination" class = "form-control" placeholder="">
+
+						<label for = "firsttraintime">First Train Time </label>
+						<input type="text" id = "firsttraintime" class = "form-control" placeholder="Please enter in Military Time (HH:mm)">
+
+						<label for = "frequency">Frequency</label>
+						<input type="text" id = "frequency" class = "form-control" placeholder="Please enter in minutes">
+
+						<button class = "btn btn-primary btn-sm" type = "submit" id="submitbutton">SUBMIT</button>
+					</form>
+					
+
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.0.16/chance.min.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src = "./assets/javascript/train.js"></script>
+
+</body>
+</html>

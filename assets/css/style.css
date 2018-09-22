@@ -1,0 +1,52 @@
+body {
+	background-color: #287e85;
+
+	
+}
+
+.jumbotron {
+	margin-top: 40px;
+	background-image: url("/images/bullettrainstation.jpg");
+	border:5px grey solid;
+	color: white;
+	text-align: center;
+}
+
+
+.panel > .panel-heading {
+	background-color: lightgray;
+	text-align: center;
+	font-size: 24px;
+}
+
+
+.table-striped {
+	text-align: center;
+	font-size: 16px;
+	background-color: white;
+}
+
+th {
+	text-align: center;
+	font-style: bold;
+	color: black;
+	font-size: 16px;
+}
+
+.btn {
+    background-color: lightgray;
+    color: black;
+	border: 5px black;
+	margin: 5px;
+
+}
+
+.form-control{
+	margin-top: 5px;
+	text-align: center;
+	padding: 5px;
+}
+
+label {
+	margin-top: 30px;
+}
