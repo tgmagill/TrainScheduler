@@ -6,7 +6,7 @@ body {
 
 .jumbotron {
 	margin-top: 40px;
-	background-image: url("..images/bullettrainstation.jpg");
+	background-image: url("../images/bullettrainstation.jpg");
 	border:5px grey solid;
 	color: white;
 	text-align: center;
